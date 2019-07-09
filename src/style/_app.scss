@@ -1,0 +1,14 @@
+@import "./variables";
+@import "./font/Roboto.css";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  padding: $gap-size;
+  color: $primary-color;
+  background-color: $background-color;
+}
+
