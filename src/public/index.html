@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <title>Your TypeScript App</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
+
 <body>
-<div class="main">
-    <h1>Your TypeScript App</h1>
-</div>
+  <div id="canvas-container">
+    <img id="canvas-image">
+    <div id="canvas-image-disabled">Paint<br>Bitmap<br>OFF</div>
+    <canvas id="golden-body-canvas"></canvas>
+    <div id="interaction-legend">
+      <ul>
+        <li>
+          <span class="heading">mouse drag = </span> move single spot</li>
+        <li>
+          <span class="heading">Shift + mouse drag = </span> triangle-move spots</li>
+        <li>
+          <span class="heading">Ctrl + mouse drag = </span> zomm in or out</li>
+      </ul>
+      <ul>
+        <li>
+          <span class="heading">double click = </span> incremental paint </li>
+        <li>
+          <span class="heading">Shift + double click = </span> backwards incremental paint</li>
+        <li>
+          <span class="heading">double click on thumb = </span> toggle paint bitmap</li>
+      </ul>
+      <ul>
+        <li>
+          <span class="heading">Space key = </span> animate</li>
+        <li>
+          <span class="heading">digit 1 = </span>full screen</li>
+      </ul>
+    </div>
+    <textarea id="golden-body-paint-order" rows="15"></textarea>
+    <textarea id="golden-body-penta-tree" rows="40"></textarea>
+    <textarea id="golden-body-style-tree" rows="40"></textarea>
+  </div>
+
 </body>
+
 </html>
